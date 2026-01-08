@@ -5,7 +5,12 @@
     <title>Parcours scolaire</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<!-- Toggle langue -->
+<input type="checkbox" id="lang-toggle">
+<label for="lang-toggle" id="translate-btn">EN</label>
 
 <header>
     <nav>
@@ -19,18 +24,30 @@
 </header>
 
 <section>
-    <h1>Parcours scolaire</h1>
 
-    <ul class="liste">
-        <li>Baccalauréat STI2D</li>
-        <li>Projet d’intégrer un BUT Informatique</li>
-        <li>Objectif : école d’ingénieur en cybersécurité</li>
-    </ul>
+    <!-- ================= FR ================= -->
+    <div class="lang-fr">
+        <h1>Parcours scolaire</h1>
+
+        <ul class="liste">
+            <li>Baccalauréat STI2D</li>
+            <li>Projet d’intégrer un BUT Informatique</li>
+            <li>Objectif : école d’ingénieur en cybersécurité</li>
+        </ul>
+    </div>
+
+    <!-- ================= EN ================= -->
+    <div class="lang-en">
+        <h1>Educational background</h1>
+
+        <ul class="liste">
+            <li>STI2D High School Diploma</li>
+            <li>Plan to join a Bachelor of Technology in Computer Science</li>
+            <li>Goal: engineering school specialized in cybersecurity</li>
+        </ul>
+    </div>
+
 </section>
-
-<footer>
-    © 2026 - Prénom Nom
-</footer>
 
 </body>
 </html>
