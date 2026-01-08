@@ -2,10 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Expériences professionnelles</title>
+    <title>Expériences</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<!-- Toggle langue -->
+<input type="checkbox" id="lang-toggle">
+<label for="lang-toggle" id="translate-btn">EN</label>
 
 <header>
     <nav>
@@ -19,17 +24,58 @@
 </header>
 
 <section>
-    <h1>Expériences professionnelles</h1>
 
-    <ul class="liste">
-        <li><strong>Création de sites web</strong> — projets personnels en HTML/CSS</li>
-        <li><strong>Bénévole</strong> — Association du don du sang de Manosque</li>
-    </ul>
+    <!-- ================= FR ================= -->
+    <div class="lang-fr">
+        <h1>Expériences</h1>
+
+        <ul class="liste">
+
+            <li class="experience">
+                <div class="experience-text">
+                    <strong>Création de sites web</strong><br>
+                    Projets personnels en HTML et CSS
+                </div>
+                <img src="htmlimage.webp" alt="Création de sites web">
+            </li>
+
+            <li class="experience reverse">
+                <div class="experience-text">
+                    <strong>Bénévole</strong><br>
+                    Association du don du sang de Manosque
+                </div>
+                <img src="dondusang.jpg" alt="Don du sang">
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- ================= EN ================= -->
+    <div class="lang-en">
+        <h1>Experience</h1>
+
+        <ul class="liste">
+
+            <li class="experience">
+                <div class="experience-text">
+                    <strong>Website creation</strong><br>
+                    Personal projects using HTML and CSS
+                </div>
+                <img src="htmlimage.webp" alt="Website creation">
+            </li>
+
+            <li class="experience reverse">
+                <div class="experience-text">
+                    <strong>Volunteer</strong><br>
+                    Blood donation association of Manosque
+                </div>
+                <img src="dondusang.jpg" alt="Blood donation">
+            </li>
+
+        </ul>
+    </div>
+
 </section>
-
-<footer>
-    © 2026 - Prénom Nom
-</footer>
 
 </body>
 </html>
