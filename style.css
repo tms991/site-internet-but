@@ -1,3 +1,154 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #e5fbfd;
+    padding-top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* ============================= */
+/* Navigation */
+/* ============================= */
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e5fbfd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 25px;
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 25px;
+}
+
+header nav ul li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+/* ============================= */
+/* Sections */
+/* ============================= */
+
+section {
+    min-height: calc(100vh - 70px);
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 80px;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    max-width: 1100px;
+}
+
+/* ============================= */
+/* Expériences & projets */
+/* ============================= */
+
+.liste {
+    max-width: 1100px;
+    width: 100%;
+    padding: 0;
+}
+
+.experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 40px;
+    list-style: none;
+}
+
+.experience.reverse {
+    flex-direction: row-reverse;
+}
+
+.experience-text {
+    width: 55%;
+    text-align: left;
+}
+
+.experience img {
+    width: 35%;
+    border-radius: 10px;
+}
+
+/* ============================= */
+/* Projet Cameroun */
+/* ============================= */
+
+.image-projet {
+    width: 450px;
+    max-width: 90%;
+    border-radius: 12px;
+    margin-bottom: 80px;
+}
+
+/* ============================= */
+/* Bouton langue */
+/* ============================= */
+
+#lang-toggle {
+    display: none;
+}
+
+#translate-btn {
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    z-index: 2000;
+    background: black;
+    color: white;
+    padding: 8px 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ============================= */
+/* Gestion langues */
+/* ============================= */
+
+.lang-en {
+    display: none;
+}
+
+#lang-toggle:checked ~ section .lang-fr {
+    display: none;
+}
+
+#lang-toggle:checked ~ section .lang-en {
+    display: block;
+}
 /* ============================= */
 /* Fond du site */
 /* ============================= */
@@ -143,3 +294,4 @@ footer {
     color: white;
     margin-top: 40px;
 }
+
