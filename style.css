@@ -249,7 +249,7 @@ section p {
 
 /* Photo principale */
 #accueil img {
-    width: 800px;
+    width: 1300px;
     border-radius: 120px;
     margin-top: 20px;
 }
@@ -283,16 +283,5 @@ section p {
     margin-bottom: 20px;
 }
 
-/* ============================= */
-/* Footer */
-/* ============================= */
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    margin-top: 40px;
-}
 
 
